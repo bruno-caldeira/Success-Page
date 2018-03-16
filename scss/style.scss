@@ -1,0 +1,15 @@
+//modules and variables
+// @import "partials/base";
+
+
+@import "mixin/breakpoint";
+
+//partials
+@import "partials/var";
+@import "partials/main";
+
+
+//third-party (vendor) 
+@import "vendor/normalize";
+
+   

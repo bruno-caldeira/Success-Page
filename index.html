@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,600">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="success">
+		<div class="icon scale">
+			<img src="images/success-icon.png" alt="Success Icon">
+		</div>
+			<div class="success-wrapper parallax">
+				<div class="main-wrapper">
+					<h1 class="success-title">Thank You</h1>
+					<div class="success-content">
+						<p>Your order <strong>#100077557 has been placed.</strong></p>
+						<p>An email has been sent to you with details of your order and a link to track its progress.</p>
+					</div>
+					<div class="action-wrapper">
+						<a href="http://www.drinksupermarket.com" class="btn text-btn">
+							<em class="action-content">Continue Browsing</em>
+						</a>
+						<a href="https://uk.trustpilot.com/evaluate/www.drinksupermarket.com" target="_blank" class="btn review-btn">
+							<em class="action-content">Leave a review</em>
+							<i class="action-icon"></i>
+						</a>
+						<span class="btn share-btn">
+							<em class="action-content">Share your shop</em>
+							<div class="share-container" id="share-container">
+								<i class="share-item share-facebook"></i>
+								<i class="share-item share-twitter"></i>
+								<i class="share-item share-google"></i>
+							</div>
+						</span>
+					</div>
+				</div>
+				<div class="products-wrapper">
+					<span class="close"></span>
+					<div class="products-item clearfix">
+						<div class="item-image">
+							<img src="images/serravinci-chocollate-shot_400x400.jpg" alt="">
+						</div>
+						<div class="item-title">
+							<h2>Serravinci Pistachio Cream Liqueur 10cl Gift Pack</h2>
+						</div>
+						<div class="share-container">
+						    <a class="share-item share-facebook" href="javascript:fbShare('<?php echo $productUrl ?>', 'Fb Share', 'Facebook share popup', '<?php echo $imageUrl ?>', 600, 300)" title="Share on Facebook"></a>
+						    <a class="share-item share-twitter" href="javascript:twitterShare('I\'ve just bought <?php echo $item->getName() ?> -', '<?php echo tiny_url($productUrl)?>' ,600, 300)" title="Share on Twitter"></a>
+						    <a class="share-item share-google" href="javascript:googleShare('<?php echo $productUrl ?>',600, 600)" title="Share on Google Plus"></a>
+						</div>
+					</div>
+
+					<div class="products-item clearfix">
+						<div class="item-image">
+							<img src="images/serravinci-chocollate-shot_400x400.jpg" alt="">
+						</div>
+						<div class="item-title">
+							<h2>Serravinci Pistachio Cream Liqueur 10cl Gift Pack</h2>
+						</div>
+						<div class="share-container">
+						    <a class="share-item share-facebook" href="javascript:fbShare('<?php echo $productUrl ?>', 'Fb Share', 'Facebook share popup', '<?php echo $imageUrl ?>', 600, 300)" title="Share on Facebook"></a>
+						    <a class="share-item share-twitter" href="javascript:twitterShare('I\'ve just bought <?php echo $item->getName() ?> -', '<?php echo tiny_url($productUrl)?>' ,600, 300)" title="Share on Twitter"></a>
+						    <a class="share-item share-google" href="javascript:googleShare('<?php echo $productUrl ?>',600, 600)" title="Share on Google Plus"></a>
+						</div>
+					</div>
+
+					<div class="products-item clearfix">
+						<div class="item-image">
+							<img src="images/serravinci-chocollate-shot_400x400.jpg" alt="">
+						</div>
+						<div class="item-title">
+							<h2>Serravinci Pistachio Cream Liqueur 10cl Gift Pack</h2>
+						</div>
+						<div class="share-container">
+						    <a class="share-item share-facebook" href="javascript:fbShare('<?php echo $productUrl ?>', 'Fb Share', 'Facebook share popup', '<?php echo $imageUrl ?>', 600, 300)" title="Share on Facebook"></a>
+						    <a class="share-item share-twitter" href="javascript:twitterShare('I\'ve just bought <?php echo $item->getName() ?> -', '<?php echo tiny_url($productUrl)?>' ,600, 300)" title="Share on Twitter"></a>
+						    <a class="share-item share-google" href="javascript:googleShare('<?php echo $productUrl ?>',600, 600)" title="Share on Google Plus"></a>
+						</div>
+					</div>
+
+					<div class="products-item clearfix">
+						<div class="item-image">
+							<img src="images/serravinci-chocollate-shot_400x400.jpg" alt="">
+						</div>
+						<div class="item-title">
+							<h2>Serravinci Pistachio Cream Liqueur 10cl Gift Pack</h2>
+						</div>
+						<div class="share-container">
+						    <a class="share-item share-facebook" href="javascript:fbShare('<?php echo $productUrl ?>', 'Fb Share', 'Facebook share popup', '<?php echo $imageUrl ?>', 600, 300)" title="Share on Facebook"></a>
+						    <a class="share-item share-twitter" href="javascript:twitterShare('I\'ve just bought <?php echo $item->getName() ?> -', '<?php echo tiny_url($productUrl)?>' ,600, 300)" title="Share on Twitter"></a>
+						    <a class="share-item share-google" href="javascript:googleShare('<?php echo $productUrl ?>',600, 600)" title="Share on Google Plus"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	 
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/modernizr.custom.min.js"></script>
+		<script src="js/lib.js"></script>
+
+		<script>
+		    function fbShare(url, title, descr, image, w, h) {
+		        var left = (screen.width/2)-(w/2);
+		        var top = (screen.height/2)-(h/2);
+		        window.open('//www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + top + ',left=' + left + ',toolbar=0,status=0,width=' + w + ',height=' + h);
+		    }
+		    function twitterShare(text, url, w, h) {
+		        var left = (screen.width/2)-(w/2);
+		        var top = (screen.height/2)-(h/2);
+		        window.open('//twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + url, + 'Tweet', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+		    } 
+		    function googleShare(url, w, h) {
+		        var left = (screen.width/2)-(w/2);
+		        var top = (screen.height/2)-(h/2);
+		        window.open('//plus.google.com/share?url=' + url, +'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes, width='+w+', height='+h+', top='+top+', left='+left);
+		    } 
+		</script>
+
+	</body>	
+</html>
+

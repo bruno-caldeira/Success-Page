@@ -1,0 +1,215 @@
+// =============================================
+// Compass Defaults
+// =============================================
+ 
+// Border Radius
+
+$default-border-radius: 5px; 
+$small-border-radius: 3px;
+
+// Box Shadow
+$default-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+
+// Transition
+
+$default-transition-property: all;
+$default-transition-duration: 300ms;
+$default-transition-function: ease-in-out;
+$default-transition-delay: 0;
+
+// =============================================
+// Primary Break Points
+// =============================================
+
+// These should be used with the bp (max-width, xx) mixin
+// where a min-width is used, remember to +1 to break correctly.
+// If these are changed, they must also be updated in app.js
+
+$bp-xsmall: 479px;
+$bp-small: 599px;
+$bp-medium: 770px;
+$bp-large: 979px; 	
+$bp-xlarge: 1199px; 
+
+// =============================================
+// Base Values
+// =============================================
+
+// Spacing
+
+$gap: 10px;
+$gap-large: 30px;
+
+$trim: 30px;
+// This will get applied on viewports smaller than 480px
+$trim-small: 15px;
+
+// Padding that will get applied to content areas
+$box-spacing-large: 20px;
+
+// Standard padding around box elements such as banner messages, etc
+$box-spacing: 10px;
+
+// Standard spacing between elements within a box, such as "Add to cart", "Price box", etc
+$element-spacing: 7px;
+
+// Dimensions
+
+$max-content-width: 1200px;
+$max-container-width-page-skin: 1040px;
+$max-container-width: $trim + $max-content-width + $trim;
+$max-std-formatted-width: 50em;
+
+// =============================================
+// Brand Colors
+// =============================================
+
+// Usually not used directly in Sass partials.
+// Only used to define context-based color vars in this file.
+
+$c-background: #FCFCFC;
+$c-background-skip: #EDEDED;
+$c-background-skip-hover: darken($c-background-skip,5%);
+$c-red: #A02320;
+// $c-red: #799755; 
+$c-red-rgba: rgba(160, 35, 32, 1); 
+// $c-red-rgba: rgba(121, 151, 85, 1); 
+$c-red-rgba-opacity: rgba(160, 35, 32, 0.8); 
+// $c-red-rgba-opacity: rgba(121, 151, 85, 0.8); 
+$c-green: #23A30D;
+$c-blue: #3399CC;
+$c-red-hover:darken($c-red,5%);
+$c-yellow: #ee9030;
+$c-border: #D6D3D3;
+
+
+
+// =============================================
+// Base Colors
+// =============================================
+
+// Text
+
+$c-text: #5D5C5C;
+$c-text-gray: #B6B5B5;
+$c-text-white: #FFFFFF;
+// Primary font color for headings and other non-link text
+$c-text-primary: $c-text;
+
+// Interaction
+
+$c-action: $c-text;
+$c-stimulus: darken($c-red, 15%);
+$c-subtle: #A0A0A0;
+
+// Notifications
+
+$c-danger: #E70000;
+$c-success: $c-green;
+$c-warn: #E26703;
+$c-dark: #676157;
+
+// Global Elements
+
+$c-divider-border: $c-border;
+
+// =============================================
+// Element Colors
+// =============================================
+
+// Buttons
+
+$c-button: $c-yellow;
+$c-button-hover: darken($c-yellow, 5%);
+$c-button-active: $c-yellow;
+
+// Secondary Buttons
+$c-button-secondary: #DDDDDD;
+$c-button-secondary-hover: darken(#DDDDDD, 5%);
+$c-button-secondary-active: darken(#DDDDDD, 10%);
+
+$c-button-subtle: #ECECEC;
+
+// Forms
+
+$c-input-border: $c-border;
+$c-input-border-focus: darken($c-border, 10%);
+
+$c-input-placeholder: $c-text-gray;
+$c-input-text: $c-text;
+
+$c-fieldset-border: $c-border;
+$c-fieldset-border-light: lighten($c-border, 10%);			
+
+// Headings
+
+$c-h1: $c-text;
+$c-h2: $c-text;
+$c-h3: $c-text;
+$c-h4: $c-text;
+$c-h5: $c-text;
+$c-h6: $c-text;
+
+// Link
+$c-link: $c-action;
+$c-link-hover: darken($c-action, 5%);
+$c-link-focus: $c-action;
+$c-link-active: darken($c-action, (5% / 2));
+
+// Module (generic)
+
+$c-module-background: #FFFFFF;
+// This should be applied whenever the border is surrounding a white element and/or is directly showing on white.
+$c-module-border: $c-border;
+// This should be applied whenever the border is wrapping an element with $c-module-background
+$c-module-border-light: lighten($c-border, 5%);
+$c-module-border-highlight: darken($c-border, 5%);
+
+
+// Table
+
+$c-table-background: #F4F4F4;
+$c-table-border: $c-border;
+
+$c-table-zebra-odd: #F8F7F5;
+$c-table-zebra-even: #EEEDED;
+
+// Tabs
+
+$c-tabs-background: #F6F6F6;
+
+// BreadCrumbs
+$c-breadcrumb-background: #ECEFEF;
+
+// =============================================
+// Typography
+// =============================================
+
+// Google Web Font stylesheet is included via layout XML
+
+// Font Stacks
+
+$f-stack-sans: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$f-stack-serif: Georgia, Times, 'Times New Roman', serif;
+$f-stack-special: 'Roboto','Helvetica Neue', Arial, sans-serif;
+
+$f-stack-default: $f-stack-sans;
+
+// Font Sizes
+
+$f-size-price-special: 24px;
+$f-size-price-old: 16px;
+$f-size-xxl: 18px;
+$f-size-xl: 16px;
+$f-size-l: 15px;
+
+$f-size: 14px;
+
+$f-size-s: 13px;
+$f-size-xs: 12px;
+$f-size-xxs: 11px;
+
+// Base Measures
+
+$b-line-height: 1.5;
+$b-margin-bottom: 1.5em;
